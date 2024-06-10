@@ -11,6 +11,7 @@ import { ImageGalleryListItem, ImageListItem } from './ImageGalleryItem.styled';
  * @param {string} props.image.tags - Опис або теги зображення.
  * @returns {JSX.Element} Компонент елемента галереї зображень.
  */
+
 export const ImageGalleryItem = ({ image }) => {
   return (
     <ImageGalleryListItem>

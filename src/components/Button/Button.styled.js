@@ -4,7 +4,7 @@ export const ButtonMore = styled.button`
   margin: 0 auto 30px;
   padding: 8px 16px;
   border-radius: 2px;
-  background-color: #7404de;
+  background-color: #17696a;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-align: center;
   display: inline-block;

@@ -1,20 +1,21 @@
-import PacmanLoader from 'react-spinners/PacmanLoader';
+import PacmanLoader from "react-spinners/PacmanLoader";
 
 const override = {
-  position: 'absolute',
-  left: '30%',
-  top: '25%',
-  display: 'block',
+  position: "absolute",
+  left: "30%",
+  top: "25%",
+  display: "block",
 };
 
 /**
  * Компонент Loader відображає анімацію завантаження, використовуючи PacmanLoader.
  * @returns {JSX.Element} Компонент анімації завантаження.
  */
+
 export const Loader = () => {
   return (
     <PacmanLoader
-      color="#7404de"
+      color="#17696a"
       loading={true}
       cssOverride={override}
       size={100}

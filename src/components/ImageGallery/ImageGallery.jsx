@@ -8,6 +8,7 @@ import { ImageGalleryList } from './ImageGallery.styled';
  * @param {Array} props.imageList - Масив об'єктів зображень.
  * @returns {JSX.Element} Компонент галереї зображень.
  */
+
 export const ImageGallery = ({ imageList }) => {
   return (
     <ImageGalleryList>

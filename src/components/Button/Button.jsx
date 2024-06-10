@@ -1,4 +1,3 @@
-// import { Component } from 'react';
 import PropTypes from 'prop-types';
 import { ButtonMore } from './Button.styled';
 
@@ -8,6 +7,7 @@ import { ButtonMore } from './Button.styled';
  * @param {Function} props.changePage - Функція для зміни номера сторінки.
  * @returns {JSX.Element} Компонент кнопки.
  */
+
 export const Button = (props) => {
   /**
    * Обробляє клік по кнопці.

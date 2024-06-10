@@ -1,3 +1,5 @@
+import axios from "axios";
+
 /**
  * Функція для отримання зображень за допомогою API Pixabay.
  * @param {string} value - Пошуковий запит.
@@ -7,7 +9,7 @@
  */
 
 export const fetchImages = async (value, page, controller) => {
-  const API_KEY = '29499204-a77a5df2d9e32bd170e84cd3d';
+  const API_KEY = "29499204-a77a5df2d9e32bd170e84cd3d";
   try {
     const response = await axios.get(
       `https://pixabay.com/api/?key=${API_KEY}&q=${value}&image_type=photo&orientation=horizontal&safesearch=true&page=${page}&per_page=12`,
@@ -16,7 +18,7 @@ export const fetchImages = async (value, page, controller) => {
     return response.data;
   } catch (error) {
     // Обробка помилок
-    console.error('Помилка при отриманні зображень:', error);
+    console.error("Помилка при отриманні зображень:", error);
     throw error;
   }
 };

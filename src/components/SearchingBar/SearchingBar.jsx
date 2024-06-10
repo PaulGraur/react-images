@@ -1,13 +1,13 @@
-import { useState } from 'react';
-import PropTypes from 'prop-types';
-import { Notify } from 'notiflix/build/notiflix-notify-aio';
+import { useState } from "react";
+import PropTypes from "prop-types";
+import { Notify } from "notiflix/build/notiflix-notify-aio";
 import {
   AiOutlineSearch,
   SearchBarHeader,
   SearchForm,
   SearchFormButton,
   SearchFormInput,
-} from './SearchingBar.styled';
+} from "./SearchingBar.styled";
 
 /**
  * Компонент SearchBar відповідає за пошук зображень.
@@ -16,14 +16,15 @@ import {
  * @param {Function} props.onSubmit - Функція для обробки подання форми пошуку.
  * @returns {JSX.Element} Компонент панелі пошуку.
  */
-export const SearchBar = props => {
-  const [searchString, setSearchString] = useState('');
+
+export const SearchBar = (props) => {
+  const [searchString, setSearchString] = useState("");
 
   /**
    * Обробляє зміну значення в полі введення пошукового запиту.
    * @param {Object} event - Об'єкт події.
    */
-  const handleOnChange = event => {
+  const handleOnChange = (event) => {
     setSearchString(event.currentTarget.value.toLowerCase());
   };
 
@@ -31,10 +32,10 @@ export const SearchBar = props => {
    * Обробляє подання форми пошуку.
    * @param {Object} event - Об'єкт події.
    */
-  const handleSubmit = event => {
+  const handleSubmit = (event) => {
     event.preventDefault();
-    if (searchString.trim() === '') {
-      Notify.info('Please, write name for the image');
+    if (searchString.trim() === "") {
+      Notify.info("Please, write name for the image");
       return;
     }
     props.onSubmit(searchString);
